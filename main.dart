@@ -51,4 +51,18 @@ void main() {
     String nextMonth = month.toString().padLeft(2, '0');
     print('$nextDay.$nextMonth.$year');
   }
+
+  print('TASK 3');
+
+  String text = 'flutter mobile development';
+  String vowels = 'aeiou';
+  int vowelCount = 0;
+
+  for (int i = 0; i < text.length; i++) {
+    if (vowels.contains(text[i].toLowerCase())) {
+      vowelCount++;
+    }
+  }
+
+  print('Vowels: $vowelCount');
 }
