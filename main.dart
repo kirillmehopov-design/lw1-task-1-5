@@ -82,8 +82,25 @@ void main() {
     }
   }
 
-  print('Min: $min');
-  print('Max: $max');
+  print('First list min: $min');
+  print('First list max: $max');
+
+  List<int> numbers1 = [234, 34, 123, 44, 949, 112, 67];
+  int min1 = numbers1[0];
+  int max1 = numbers1[0];
+
+  for (int i = 1; i < numbers1.length; i++) {
+    if (numbers1[i] < min1) {
+      min1 = numbers1[i];
+    }
+
+    if (numbers1[i] > max1) {
+      max1 = numbers1[i];
+    }
+  }
+
+  print('Second list min: $min1');
+  print('Second list max: $max1');
 
   print('TASK 5');
 
