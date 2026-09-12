@@ -84,4 +84,26 @@ void main() {
 
   print('Min: $min');
   print('Max: $max');
+
+  print('TASK 5');
+
+  int number = 3;
+  bool isPrime = true;
+
+  if (number < 2) {
+    isPrime = false;
+  } else {
+    for (int i = 2; i < number; i++) {
+      if (number % i == 0) {
+        isPrime = false;
+        break;
+      }
+    }
+  }
+
+  if (isPrime) {
+    print('$number is prime number');
+  } else {
+    print('$number is not prime number');
+  }
 }
